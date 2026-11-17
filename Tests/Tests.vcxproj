@@ -108,6 +108,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="BoardTests.cpp" />
+    <ClCompile Include="GameTests.cpp" />
     <ClCompile Include="PieceTests.cpp" />
     <ClCompile Include="test.cpp" />
     <ClCompile Include="pch.cpp">

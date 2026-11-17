@@ -24,13 +24,22 @@
     <ClInclude Include="EColor.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="EGameState.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
     <ClInclude Include="EMoveResult.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="EPieceState.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Game.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
     <ClInclude Include="IBoard.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IGame.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="IPiece.h">
@@ -45,6 +54,9 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Board.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Game.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Piece.cpp">
