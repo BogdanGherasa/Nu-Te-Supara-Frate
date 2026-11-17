@@ -12,7 +12,7 @@
 *.ipch
 ipch/
 
-# Rezultatele compilării
+
 [Dd]ebug/
 [Rr]elease/
 x64/
@@ -29,13 +29,17 @@ x86/
 *.tlog
 *.log
 
-# Qt (generate automat la compilare)
+
 GeneratedFiles/
 moc_*.cpp
 qrc_*.cpp
 ui_*.h
 
-# Rezultate de teste și coverage
+
+
 TestResults/
 *.coverage
 *.coveragexml
+
+
+packages/
