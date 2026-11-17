@@ -1,7 +1,13 @@
-#pragma once
+﻿#pragma once
 
 #include "EColor.h"
 
+// Toate dimensiunile tablei într-un singur loc, ca să nu existe numere magice în cod.
+//
+// Progresul unui pion se măsoară relativ la pătratul lui de start:
+//   -1        -> în bază
+//    0 .. 39  -> pe traseu (0 = pătratul de start, 39 = ultimul pătrat înainte de casă)
+//   40 .. 43  -> în casă
 namespace BoardConstants
 {
     constexpr int kPlayerCount = 4;
@@ -26,5 +32,23 @@ namespace BoardConstants
     constexpr int GetStartSquare(EColor color)
     {
         return static_cast<int>(color) * kSquaresBetweenStarts;
+    }
+
+    constexpr int ProgressToTrackSquare(EColor color, int progress)
+    {
+        if (progress < kStartProgress || progress > kLastTrackProgress)
+        {
+            return kNoSquare;
+        }
+        return (GetStartSquare(color) + progress) % kTrackLength;
+    }
+
+    constexpr int ProgressToHomeSquare(int progress)
+    {
+        if (progress < kFirstHomeProgress || progress > kLastHomeProgress)
+        {
+            return kNoSquare;
+        }
+        return progress - kFirstHomeProgress;
     }
 }
