@@ -23,16 +23,16 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <QtRcc Include="ui.qrc">
+    <QtRcc Include="NuTeSuparaFrateUI.qrc">
       <Filter>Resource Files</Filter>
     </QtRcc>
-    <QtUic Include="ui.ui">
+    <QtUic Include="NuTeSuparaFrateUI.ui">
       <Filter>Form Files</Filter>
     </QtUic>
-    <QtMoc Include="ui.h">
+    <QtMoc Include="NuTeSuparaFrateUI.h">
       <Filter>Header Files</Filter>
     </QtMoc>
-    <ClCompile Include="ui.cpp">
+    <ClCompile Include="NuTeSuparaFrateUI.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ResourceCompile Include="$pro_name$.rc">

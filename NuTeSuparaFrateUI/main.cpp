@@ -1,10 +1,10 @@
-#include "ui.h"
+#include "NuTeSuparaFrateUI.h"
 #include <QtWidgets/QApplication>
 
 int main(int argc, char *argv[])
 {
     QApplication app(argc, argv);
-    ui window;
+    NuTeSuparaFrateUI window;
     window.show();
     return app.exec();
 }

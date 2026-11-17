@@ -11,7 +11,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{3EFFD654-70FD-4AE7-86EB-46FCE06EF9F3}</ProjectGuid>
+    <ProjectGuid>{82F0FDA9-1784-4AFA-9F38-3A3429F3216D}</ProjectGuid>
     <Keyword>QtVS_v304</Keyword>
     <WindowsTargetPlatformVersion Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">10.0</WindowsTargetPlatformVersion>
     <WindowsTargetPlatformVersion Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">10.0</WindowsTargetPlatformVersion>
@@ -37,12 +37,12 @@
     <Import Project="$(QtMsBuild)\qt_defaults.props" />
   </ImportGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="QtSettings">
-    <QtInstall>Qt 6.12 MSVC</QtInstall>
+    <QtInstall>idk</QtInstall>
     <QtModules>core;gui;widgets</QtModules>
     <QtBuildConfig>debug</QtBuildConfig>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'" Label="QtSettings">
-    <QtInstall>Qt 6.12 MSVC</QtInstall>
+    <QtInstall>idk</QtInstall>
     <QtModules>core;gui;widgets</QtModules>
     <QtBuildConfig>release</QtBuildConfig>
   </PropertyGroup>
@@ -96,10 +96,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <QtRcc Include="ui.qrc"/>
-    <QtUic Include="ui.ui"/>
-    <QtMoc Include="ui.h"/>
-    <ClCompile Include="ui.cpp"/>
+    <QtRcc Include="NuTeSuparaFrateUI.qrc"/>
+    <QtUic Include="NuTeSuparaFrateUI.ui"/>
+    <QtMoc Include="NuTeSuparaFrateUI.h"/>
+    <ClCompile Include="NuTeSuparaFrateUI.cpp"/>
     <ClCompile Include="main.cpp"/>
 
   </ItemGroup>
