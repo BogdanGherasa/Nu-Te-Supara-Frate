@@ -29,8 +29,6 @@ private:
 
     static int ComputeTargetProgress(const Piece& piece, int diceValue);
 
-    static int ProgressToTrackSquare(EColor color, int progress);
-
     bool IsOccupiedByOwnPiece(EColor color, int targetProgress) const;
     std::optional<PieceId> FindOpponentOnTrackSquare(EColor movingColor, int trackSquare) const;
 
