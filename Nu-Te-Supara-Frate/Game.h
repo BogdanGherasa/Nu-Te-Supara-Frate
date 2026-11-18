@@ -9,7 +9,7 @@
 class Game : public IGame
 {
 public:
-    // IGame
+
     void Start(int playerCount) override;
     EGameState GetState() const override;
     EColor GetCurrentPlayer() const override;
@@ -17,7 +17,6 @@ public:
     const IPiece& GetPiece(PieceId id) const override;
 
 protected:
-    // Încheie rândul curent: cu un 6 jucătorul rămâne la rând, altfel rândul trece la următorul.
     void EndTurn(int diceValue);
 
 private:

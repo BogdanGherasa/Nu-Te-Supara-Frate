@@ -2,12 +2,7 @@
 
 #include "EColor.h"
 
-// Toate dimensiunile tablei într-un singur loc, ca să nu existe numere magice în cod.
-//
-// Progresul unui pion se măsoară relativ la pătratul lui de start:
-//   -1        -> în bază
-//    0 .. 39  -> pe traseu (0 = pătratul de start, 39 = ultimul pătrat înainte de casă)
-//   40 .. 43  -> în casă
+
 namespace BoardConstants
 {
     constexpr int kPlayerCount = 4;

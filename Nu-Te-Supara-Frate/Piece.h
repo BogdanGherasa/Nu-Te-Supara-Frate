@@ -7,7 +7,6 @@ class Piece : public IPiece
 public:
     Piece(EColor color, int index);
 
-    // IPiece
     EColor GetColor() const override;
     int GetIndex() const override;
     EPieceState GetState() const override;

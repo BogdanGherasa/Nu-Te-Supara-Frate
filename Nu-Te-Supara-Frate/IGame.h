@@ -8,8 +8,7 @@
 
 #include <vector>
 
-// Punctul de intrare al interfeței grafice în logica jocului.
-// Jucătorii primesc culorile în ordinea din EColor, iar primul la rând este Red.
+
 class IGame
 {
 public:
